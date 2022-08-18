@@ -1,0 +1,20 @@
+
+    <%- include('./header') %>
+    <title>Document</title>
+</head>
+<body>
+    <%- include('./navbar.ejs') %>
+    <h1 class="text-center"> ma vu demo</h1>
+   
+    <% for (let i = 0 ; i < data.length ; i++) { %>
+        <div class="card">
+            <div class="card-body">
+                <p> <%= data[i] %></p>
+                <img src ="public/img/chat2.jpg" alt="image chat">
+            </div>
+          </div>  
+      
+    <% } %>
+    
+</body>
+</html>

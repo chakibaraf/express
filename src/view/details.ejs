@@ -1,0 +1,22 @@
+<%- include('./header') %>
+<title>Document</title>
+</head>
+<body>
+<%- include('./navbar.ejs') %>
+<h1 class="text-center"> users</h1>
+
+
+<div class="card">
+    <div class="card-body">
+        <p> nom : <%= detail.name  %> </p>
+        <p> ville : <%= detail.address.street  %> </p>
+        <p> adresse :<%= detail.address.city %></p>
+    </div>
+  </div>
+        
+       
+  
+                
+        
+</body>
+</html>

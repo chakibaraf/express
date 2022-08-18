@@ -1,0 +1,20 @@
+<%- include('./header') %>
+<title>Document</title>
+</head>
+<body>
+<%- include('./navbar.ejs') %>
+<h1 class="text-center"> users</h1>
+
+<% for (item of data) { %>
+    <div class="card">
+        <div class="card-body">
+            <p> <%= item.name  %> </p>
+            <a href="/delate/<%=item.id%>">supprimer</a>
+            <a href="/details/<%=item.id%>">detail  </a>
+        </div>
+      </div>  
+  
+<% } %>
+
+</body>
+</html>
